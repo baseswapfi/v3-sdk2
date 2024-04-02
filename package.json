@@ -4,7 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "3.10.24",
+  "version": "3.10.25",
   "description": "⚒️ An SDK for building applications on top of Baseswap V3",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -24,7 +24,7 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "@baseswapfi/sdk-core": "^1.0.43",
+    "@baseswapfi/sdk-core": "^1.2.1",
     "@ethersproject/abi": "^5.0.12",
     "@ethersproject/solidity": "^5.0.9",
     "jsbi": "^3.1.4",
