@@ -21,6 +21,7 @@ export const POOL_INIT_CODE_HASH_MAP: { [chainId in ChainId]?: string } = {
  * The default factory enabled fee amounts, denominated in hundredths of bips.
  */
 export enum FeeAmount {
+  EXTRA_LOWEST = 1,
   LOWEST = 80,
   LOW = 450,
   MEDIUM = 2500,
@@ -31,6 +32,7 @@ export enum FeeAmount {
  * The default factory tick spacings by fee amount.
  */
 export const TICK_SPACINGS: { [amount in FeeAmount]: number } = {
+  [FeeAmount.EXTRA_LOWEST]: 1,
   [FeeAmount.LOWEST]: 1,
   [FeeAmount.LOW]: 10,
   [FeeAmount.MEDIUM]: 60,
