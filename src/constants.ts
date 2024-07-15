@@ -23,6 +23,7 @@ export const POOL_INIT_CODE_HASH_MAP: { [chainId in ChainId]?: string } = {
 export enum FeeAmount {
   EXTRA_LOWEST = 1,
   LOWEST = 80,
+  LOWER = 350,
   LOW = 450,
   MEDIUM = 2500,
   HIGH = 10000
@@ -34,6 +35,7 @@ export enum FeeAmount {
 export const TICK_SPACINGS: { [amount in FeeAmount]: number } = {
   [FeeAmount.EXTRA_LOWEST]: 1,
   [FeeAmount.LOWEST]: 1,
+  [FeeAmount.LOWER]: 10,
   [FeeAmount.LOW]: 10,
   [FeeAmount.MEDIUM]: 60,
   [FeeAmount.HIGH]: 200
