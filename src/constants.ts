@@ -16,7 +16,8 @@ export const POOL_INIT_CODE_HASH_MAP: { [chainId in ChainId]?: string } = {
   [ChainId.ARBITRUM]: POOL_INIT_CODE_HASH3,
   [ChainId.MODE]: POOL_HASH_MODE,
   [ChainId.OPTIMISM]: '0x5892de6063b5d6cffe15c4e490934b0ddcaf8408ce5f76e57f3f3fb07de67322',
-  [ChainId.SONIC_TESTNET]: '0x5892de6063b5d6cffe15c4e490934b0ddcaf8408ce5f76e57f3f3fb07de67322'
+  [ChainId.SONIC_TESTNET]: '0x5892de6063b5d6cffe15c4e490934b0ddcaf8408ce5f76e57f3f3fb07de67322',
+  [ChainId.SONEIUM_TESTNET]: POOL_INIT_CODE_HASH
 }
 
 /**
