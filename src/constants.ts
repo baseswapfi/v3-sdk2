@@ -25,21 +25,29 @@ export const POOL_INIT_CODE_HASH_MAP: { [chainId in ChainId]?: string } = {
  */
 export enum FeeAmount {
   EXTRA_LOWEST = 1,
+  LOWER_50 = 50,
   LOWEST = 80,
   LOWER = 350,
   LOW = 450,
+  MEDIUM_20 = 2000,
   MEDIUM = 2500,
-  HIGH = 10000
+  MEDIUM_85 = 8500,
+  HIGH = 10000,
+  HIGHER_2 = 20000
 }
 
 /**
  * The default factory tick spacings by fee amount.
  */
 export const TICK_SPACINGS: { [amount in FeeAmount]: number } = {
+  [FeeAmount.LOWER_50]: 1,
   [FeeAmount.EXTRA_LOWEST]: 1,
   [FeeAmount.LOWEST]: 1,
   [FeeAmount.LOWER]: 10,
   [FeeAmount.LOW]: 10,
   [FeeAmount.MEDIUM]: 60,
-  [FeeAmount.HIGH]: 200
+  [FeeAmount.MEDIUM_20]: 1,
+  [FeeAmount.MEDIUM_85]: 1,
+  [FeeAmount.HIGH]: 200,
+  [FeeAmount.HIGHER_2]: 1
 }
